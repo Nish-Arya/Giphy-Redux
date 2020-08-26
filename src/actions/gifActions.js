@@ -3,6 +3,7 @@ import * as APIUtil from "../util/apiUtil";
 export const RECEIVE_GIFS = 'RECEIVE_GIFS';
 
 const receiveGifs = gifs => {
+  debugger
   return {
     type: RECEIVE_GIFS,
     gifs

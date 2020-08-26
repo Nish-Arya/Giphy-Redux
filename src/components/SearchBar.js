@@ -13,6 +13,7 @@ class SearchBar extends React.Component {
   }
 
   handleSubmit = e => {
+    debugger
     e.preventDefault();
     this.props.fetchGifs(this.state.inputValue)
   }
