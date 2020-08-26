@@ -2,9 +2,13 @@ import { connect } from 'react-redux';
 import { fetchGifs } from '../actions/gifActions';
 import App from './App';
 
+const getGifUrls = ({ gifs }) => (
+  gifs.map(gif => gif.images.fixed_height.url)
+);
+
 const mapStateToProps = state => {
   return {
-    gifs: state.gifs
+    gifUrls: getGifUrls(state)
   };
 };
 
