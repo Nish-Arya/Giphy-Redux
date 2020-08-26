@@ -1,7 +1,9 @@
-// TODO: Import `createStore` from `redux`
+import { createStore } from 'redux';
+import rootReducer from './reducers/rootReducer';
 // TODO: Import middleware
-// TODO: Import `rootReducer`
 
-// TODO: Define a `configureStore` function
+const configureStore = () => {
+  return createStore(rootReducer)
+}
 
-// TODO: Export the `configureStore` function
+export default configureStore;
